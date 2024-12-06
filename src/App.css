@@ -1,0 +1,81 @@
+.light {
+  --background-color: #fff;
+  --text-color: #000;
+  --switch-background-color: #e0e0e0;
+  --switch-checked-background-color: #90caf9;
+  --switch-thumb-background-color: #fff;
+  --switch-thumb-checked-color: #1976d2;
+}
+
+.dark {
+  --background-color: #000;
+  --text-color: #fff;
+  --switch-background-color: #424242;
+  --switch-checked-background-color: #1976d2;
+  --switch-thumb-background-color: #bdbdbd;
+  --switch-thumb-checked-color: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.musicPlayer {
+  visibility: hidden;
+}
+
+.switchContainer {
+  width: 120px;
+  height: 40px;
+  background-color: var(--switch-background-color);
+  border-radius: 20px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.switchContainer.checked {
+  background-color: var(--switch-checked-background-color);
+}
+
+.switchThumb {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: var(--switch-thumb-background-color);
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  transition: all 0.3s ease;
+}
+
+.switchThumb.checked {
+  left: calc(100% - 38px);
+}
+
+.switchWrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  span {
+    font-size: 20px;
+  }
+}
+
+.switches {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
