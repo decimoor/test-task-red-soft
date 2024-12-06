@@ -2,8 +2,8 @@
 
 Проект был создал с помощью [Create React App](https://github.com/facebook/create-react-app).
 
-  npm install
-  npm start
+    npm install
+    npm start
 
 # Работа программы
 
